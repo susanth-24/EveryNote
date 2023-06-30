@@ -1,0 +1,8 @@
+{
+    "version": 2,
+    "installConfig": {
+      "optimize": {},
+      "ignoreScripts": true,
+      "npmFlags": "--legacy-peer-deps"
+    }
+  }
