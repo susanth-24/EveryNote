@@ -9,7 +9,7 @@ export const getPost = (id) => async (dispatch) => {
 
     dispatch({ type: FETCH_POST, payload: { post: data } });
   } catch (error) {
-    throw error;
+    //throw error;
   }
 };
 
@@ -22,7 +22,7 @@ export const getPosts = (page) => async (dispatch) => {
     dispatch({ type: FETCH_ALL, payload: { data, currentPage, numberOfPages } });
     dispatch({ type: END_LOADING });
   } catch (error) {
-    throw error;
+    //throw error;
   }
 };
 export const getPostsBySearch = (searchQuery) => async (dispatch) => {
@@ -33,7 +33,7 @@ export const getPostsBySearch = (searchQuery) => async (dispatch) => {
     dispatch({ type: FETCH_BY_SEARCH, payload: { data } });
     dispatch({ type: END_LOADING });
   } catch (error) {
-    throw error;
+    //throw error;
   }
 };
 
@@ -45,7 +45,7 @@ export const createPost = (post, history) => async (dispatch) => {
     history(`/posts/${data._id}`)
     dispatch({ type: CREATE, payload: data });
   } catch (error) {
-    throw error;
+    //throw error;
   }
 }
 
@@ -54,7 +54,7 @@ export const updatePost = (id, post) => async (dispatch) => {
     const { data } = await api.updatePost(id, post);
     dispatch({ type: UPDATE, payload: data });
   } catch (error) {
-    throw error;
+    //throw error;
   }
 }
 
@@ -63,7 +63,7 @@ export const deletePost = (id) => async (dispatch) => {
     await api.deletePost(id);
     dispatch({ type: DELETE, payload: id });
   } catch (error) {
-    throw error;
+    //throw error;
   }
 }
 
@@ -74,7 +74,7 @@ export const likePost = (id) => async (dispatch) => {
     const { data } = await api.likePost(id, user?.token);
     dispatch({ type: LIKE, payload: data });
   } catch (error) {
-    throw error;
+    //throw error;
   }
 }
 
@@ -85,6 +85,6 @@ export const commentPost = (commenter, comment, id) => async (dispatch) => {
     dispatch({ type: COMMENT, payload: data });
     return data.comments;
   } catch (error) {
-    throw error;
+    //throw error;
   }
 };
