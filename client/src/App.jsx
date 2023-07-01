@@ -11,10 +11,10 @@ const App = () => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" exact element={<StartPage />} />
-        <Route path="/posts" exact element={<Home />} />
-        <Route path="/posts/search" exact element={<Home />} />
-        <Route path="auth" exact Component={() => !user ? <Auth /> : <Navigate to="/" />} />
+        <Route path="/"  element={<StartPage />} />
+        <Route path="/posts"  element={<Home />} />
+        <Route path="/posts/search"  element={<Home />} />
+        <Route path="auth"  Component={() => !user ? <Auth /> : <Navigate to="/" />} />
         <Route path="/profile/:id" element={<UserProfile />} />
         <Route path="/posts/:id" element={<PostDetails />} />
 
