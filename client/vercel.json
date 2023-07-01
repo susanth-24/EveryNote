@@ -4,5 +4,6 @@
       "optimize": {},
       "ignoreScripts": true,
       "npmFlags": "--legacy-peer-deps"
-    }
+    },
+    "rewrites": [{ "source": "/(.*)", "destination": "/" }]
   }
