@@ -1,11 +1,14 @@
 {
     "version": 2,
     "installConfig": {
-      "optimize": {},
-      "ignoreScripts": true,
-      "npmFlags": "--legacy-peer-deps"
+        "optimize": {},
+        "ignoreScripts": true,
+        "npmFlags": "--legacy-peer-deps"
     },
-    "redirects": [
-        { "source": "/(.*)", "destination": "/index.html" }
-      ]
-  }
+    "rewrites": [
+        {
+            "source": "/(.*)",
+            "destination": "/"
+        }
+    ]
+}
