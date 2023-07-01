@@ -5,7 +5,11 @@
       "ignoreScripts": true,
       "npmFlags": "--legacy-peer-deps"
     },
-    "routes": [
-        { "src": "/(.*)", "dest": "index.html" }
-     ]
+    "rewrites": [
+        {
+          "source": "/(.*)",
+          "destination": "/index.html",
+          "statusCode": 200
+        }
+      ]
   }
