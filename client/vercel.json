@@ -5,11 +5,7 @@
       "ignoreScripts": true,
       "npmFlags": "--legacy-peer-deps"
     },
-    "rewrites": [
-        {
-          "source": "/posts",
-          "destination": "/",
-          "statusCode": 200
-        }
+    "redirects": [
+        { "source": "/(.*)", "destination": "/index.html" }
       ]
   }
