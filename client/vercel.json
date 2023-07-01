@@ -5,5 +5,5 @@
       "ignoreScripts": true,
       "npmFlags": "--legacy-peer-deps"
     },
-    "rewrites": [{ "source": "/(.*)", "destination": "/" }]
+    "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }]
   }
